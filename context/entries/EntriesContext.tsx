@@ -4,7 +4,8 @@ import { Entry } from '../../interfaces';
 interface ContextProps {
     entries: Entry[];
     addNewEntry: (description: string) => void;
-    updateEntry: ( entry: Entry ) => void;
+    updateEntry: ( entry: Entry, showSnackbar?: boolean ) => void;
+    deleteEntry: ( id: string, showSnackbar: boolean ) => void;
 }
 
 
