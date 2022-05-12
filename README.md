@@ -8,3 +8,6 @@ docker-compose up -d
 
 ## Configurar variables de entorno
 
+Buscar el archivo __.env.example__ Borrar su extension __.example__ 
+Para que solo quede un archivo __.env__, reemplazar las variables con sus valores correspondientes
+
