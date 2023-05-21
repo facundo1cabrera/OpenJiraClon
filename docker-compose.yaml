@@ -1,4 +1,20 @@
 services: 
+  app:
+    build:
+      context: .
+      target: dev
+      dockerfile: Dockerfile
+    # command: yarn start:dev
+    volumes:
+      - .:/app/
+      - /app/node_modules
+
+    container_name: openjira-app
+    ports:
+      - ${PORT}:${PORT}
+    environment:
+      MONGO_URL: ${MONGO_URL}
+
   entriesdb: 
     image: mongo:5.0.0
     container_name: entries_database
