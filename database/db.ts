@@ -10,7 +10,6 @@ const mongoConnection = {
     isConnected: 0
 }
 
-
 export const connect = async() => {
 
     if ( mongoConnection.isConnected ) {
